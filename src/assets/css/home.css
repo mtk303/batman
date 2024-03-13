@@ -1,0 +1,65 @@
+.bannerImg {
+    height: 380px;
+    width: 100%;
+    object-position: center;
+}
+
+@media screen and (max-width:860px) {
+    .bannerImg {
+        height: 250px;
+    }
+}
+
+marquee {
+    font-size: 15px;
+}
+
+.tabImg {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+.nav-pills .nav-link.active {
+    padding: 0px 8px !important;
+}
+
+
+@media screen and (max-width:545px) {
+    .nav-pills .nav-link p {
+        text-align: center;
+    }
+
+    .tabImg {
+        margin: auto;
+
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .bannerImg {
+        height: 200px;
+    }
+
+    .nav-pills .nav-link p {
+        font-size: 13px;
+    }
+
+    .tabImg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .nav-pills .nav-link.active {
+        padding: 0px 4px !important;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .bannerImg {
+        height: 180px;
+    }
+}
