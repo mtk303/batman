@@ -9,20 +9,24 @@ import { Button } from 'react-bootstrap';
 
 const Navbar = () => {
     const navLinks = [
-        { id: 1, icon: <FaWallet size={23} />, link: '/' },
-        { id: 2, icon: <FaUser size={23} />, link: '/' },
+        // { id: 1, icon: <FaWallet size={23} />, link: '/' },
+        // { id: 2, icon: <FaUser size={23} />, link: '/' },
         { id: 3, icon: <IoLogOutOutline size={28} />, link: '/' },
     ]
     return (
         <div className='px-2 px-sm-4 border-bottom  d-flex align-items-center justify-content-between'>
-            <img src={logo} className='logo' />
+            <NavLink to={'/'}>
+                <img src={logo} className='logo' />
+            </NavLink>
             <div className='d-flex align-items-center justify-content-between gap-3'>
                 {navLinks.map((item) => {
                     return <NavLink className={'text-light'} to={item.link} key={item.id}>
                         {item.icon}
                     </NavLink>
                 })}
-                <Button variant="primary">Login</Button>{' '}
+                <NavLink to={'/login'}>
+                    <Button variant="primary">Login</Button>
+                </NavLink>
 
             </div>
         </div>

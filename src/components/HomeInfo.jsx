@@ -6,12 +6,12 @@ import { NavLink } from 'react-router-dom';
 
 const HomeInfo = () => {
     const infos = [
-        { id: 1, title: 'Wallet', icon: <FaWallet size={25} />, link: '/' },
-        { id: 2, title: 'Promotion', icon: <FaGift size={25} />, link: '/' },
-        { id: 3, title: 'Profile', icon: <FaUser size={25} />, link: '/' },
+        { id: 1, title: 'Wallet', icon: <FaWallet size={25} />, link: '/wallet' },
+        { id: 2, title: 'Promotion', icon: <FaGift size={25} />, link: '/promotion' },
+        { id: 3, title: 'Profile', icon: <FaUser size={25} />, link: '/profile' },
     ]
     return (
-        <div className='mt-4 mb-sm-4 d-flex align-items-center justify-content-start gap-4 gap-sm-5 text-center '>
+        <div className='mt-4 mb-sm-4 d-none d-md-flex align-items-center justify-content-start gap-4 gap-sm-5 text-center '>
             {infos.map((item) => {
                 return <NavLink className={'text-light mx-sm-5'} key={item.id} to={item.link} >
                     {item.icon}

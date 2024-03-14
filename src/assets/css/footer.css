@@ -1,0 +1,12 @@
+.footer {
+    background: linear-gradient(20deg, rgba(53, 69, 169, 1) 0%, rgba(43, 55, 132, 1) 10%, rgba(16, 31, 62, 1) 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 1px solid rgba(53, 69, 169, 1);
+
+}
