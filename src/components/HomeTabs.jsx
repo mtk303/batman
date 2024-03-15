@@ -50,7 +50,7 @@ function HomeTabs() {
     ]
     return (
         <Tab.Container id="left-tabs-example" defaultActiveKey={1}>
-            <Row className=''>
+            <Row style={{ marginBottom: '100px' }}  >
                 <Col xs={4} sm={2}>
                     <Nav variant="pills" className="  flex-column ">
 

@@ -6,6 +6,8 @@ import WalletPage from "../pages/Wallet";
 import ProfilePage from "../pages/Profile";
 import ChangePasswordPage from "../pages/ChangePassword";
 import LoginPage from "../pages/Login";
+import HistoryPage from "../pages/History";
+import GameLogPage from "../pages/GameLog";
 
 const router = createBrowserRouter([
     {
@@ -21,9 +23,17 @@ const router = createBrowserRouter([
                 path: '/promotion',
                 element: <PromotionPage />
             },
+            // {
+            //     path: '/wallet',
+            //     element: <WalletPage />
+            // },
             {
-                path: '/wallet',
-                element: <WalletPage />
+                path: '/history',
+                element: <HistoryPage />
+            },
+            {
+                path: '/game-log',
+                element: <GameLogPage />
             },
             {
                 path: '/profile',

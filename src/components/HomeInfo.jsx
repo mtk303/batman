@@ -3,12 +3,15 @@ import { FaWallet } from "react-icons/fa6";
 import { FaGift } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
+import { FaClock } from "react-icons/fa";
+import { IoNewspaper } from "react-icons/io5";
 
 const HomeInfo = () => {
     const infos = [
-        { id: 1, title: 'Wallet', icon: <FaWallet size={25} />, link: '/wallet' },
-        { id: 2, title: 'Promotion', icon: <FaGift size={25} />, link: '/promotion' },
-        { id: 3, title: 'Profile', icon: <FaUser size={25} />, link: '/profile' },
+        { id: 1, title: 'History', icon: <FaClock size={21} />, link: '/history' },
+        { id: 1, title: 'Game Log', icon: <IoNewspaper size={21} />, link: '/game-log' },
+        { id: 3, title: 'Promotion', icon: <FaGift size={23} />, link: '/promotion' },
+        { id: 4, title: 'Profile', icon: <FaUser size={23} />, link: '/profile' },
     ]
     return (
         <div className='mt-4 mb-sm-4 d-none d-md-flex align-items-center justify-content-start gap-4 gap-sm-5 text-center '>

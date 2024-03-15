@@ -5,8 +5,30 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    /* border-top-left-radius: 30px;
+    border-top-right-radius: 30px; */
     border: 1px solid rgba(53, 69, 169, 1);
 
+}
+
+@media screen and (max-width:410px) {
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer span {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer span {
+        font-size: 12px;
+    }
 }
